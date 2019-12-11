@@ -1,5 +1,5 @@
 {
-  "name": "lazzy-load",
+  "name": "lazzy-load-secure-ls",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -28,6 +28,7 @@
     "@nguniversal/module-map-ngfactory-loader": "8.1.1",
     "express": "^4.15.2",
     "rxjs": "~6.4.0",
+    "secure-ls": "^1.2.5",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
   },
