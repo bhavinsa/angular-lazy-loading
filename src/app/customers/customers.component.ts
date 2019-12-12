@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-
+import { DataService } from "@Data/data.service";
 @Component({
   selector: 'app-customers',
   templateUrl: './customers.component.html',
@@ -8,9 +8,11 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class CustomersComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
+    const result = this.dataService.getData();
+    console.log(result);
   }
 
 }
